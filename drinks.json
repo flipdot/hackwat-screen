@@ -1,0 +1,13 @@
+{
+    "categories":["Bier", "Mate", "Tschunk"],
+    "drinks":[
+        {"category": "Bier", "name":"Eschweger", "price":"2€"},
+        {"category": "Bier", "name":"Jacobinus", "price":"2€"}, 
+        {"category": "Bier", "name":"Köstritzer", "price":"2€"}, 
+        {"category": "Mate", "name":"Mio-Mate", "price":"2€"}, 
+        {"category": "Mate", "name":"Mio-Ginger", "price":"2€"}, 
+        {"category": "Mate", "name":"Mio-Banane", "price":"2€"}, 
+        {"category": "Mate", "name":"Mio-Cola", "price":"2€"}, 
+        {"category": "Tschunk", "name":"Tschunk", "price":"4€"}
+    ]
+}

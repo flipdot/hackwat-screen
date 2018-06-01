@@ -29,6 +29,26 @@ class App extends React.Component {
                 this.writeLine('');
             });
         });
+        this.printDrinks();
+    }
+
+    printDrinks = () => {
+        // TODO: change to local drinks.json file...
+        fetch('https://gist.githubusercontent.com/nxb303/8585e3ddf9294b9570d6ab34fa538c49/raw/811d6c9e61ec2833d4f676a156b4659e8ee38102/drinks.json').then(res => res.json()).then((data) => {
+            this.writeLine('');
+            this.writeLine('GETRÄNKE');
+            this.writeSeparator();
+            data.categories.forEach(item => {
+                this.writeLine(` - ${item} - `);
+                data.drinks.forEach(({ category, name, price }) => {
+                    if(category == item) {
+                        this.writeLine(`${name} - ${price}`);
+                    }
+                });
+                this.writeLine('');
+            });
+            
+        });
     }
 
     writingFinished = () => {
