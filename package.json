@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html --open",
     "build": "parcel build index.html",
-    "test": "node --test test/"
+    "test": "node --test test/*.js"
   },
   "dependencies": {
     "classnames": "^2.5.1",
