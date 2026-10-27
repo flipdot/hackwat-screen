@@ -1,6 +1,7 @@
 # Parcel
 .cache
 dist
+.parcel-cache
 
 # Yarn
 node_modules

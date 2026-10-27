@@ -1,4 +1,3 @@
-const fetch = require('node-fetch');
 const express = require('express');
 const cors = require('cors');
 
@@ -104,7 +103,12 @@ app.get('/', (req, res) => {
     });
 });
 
-app.listen(4444, () => {
-    console.log('Listening…');
-});
+if (require.main === module) {
+    const PORT = process.env.PORT || 4444;
+    app.listen(PORT, () => {
+        console.log('Listening…');
+    });
+}
+
+module.exports = { app, getLine, getTableRow, parseTable, getRowNo, mapRowToTalk };
 
