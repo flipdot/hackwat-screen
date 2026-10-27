@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import format from 'date-fns/format';
 
 class App extends React.Component {
@@ -205,4 +205,4 @@ function Cursor({ idle }) {
 }
 
 
-ReactDOM.render(<App />, document.getElementById('app'));
+createRoot(document.getElementById('app')).render(<App />);
